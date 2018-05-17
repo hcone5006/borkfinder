@@ -1,0 +1,86 @@
+.hide {
+  position: absolute !important;
+  top: -9999px !important;
+  left: -9999px !important; }
+
+.btn-primary {
+  background-color: #06D6A0;
+  border: #06b083;
+  color: #26547C; }
+
+.btn-warning {
+  background-color: #FFD166;
+  color: #26547C; }
+
+.navbar-dark {
+  background-color: rgba(38, 84, 124, 0.9); }
+  .navbar-dark .navbar-toggler {
+    color: #FCFCFC;
+    border-color: transparent; }
+
+.navbar-brand span {
+  vertical-align: middle;
+  color: #FFD166;
+  font-size: 1.5em;
+  line-height: 1; }
+
+.collapse.show {
+  border-top: 1px solid rgba(255, 255, 255, 0.5); }
+
+.cover {
+  min-height: calc(100vh - 58px); }
+
+#home .cover {
+  background: url("/img/dogs-at-beach.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+#home .cover,
+#home .shaded {
+  min-height: calc(100vh - 58px); }
+
+#home .shaded {
+  background-color: rgba(255, 209, 102, 0.2); }
+
+#home .finder-wrapper {
+  padding-top: 50%; }
+
+#home .finder-inner {
+  background-color: rgba(38, 84, 124, 0.7); }
+
+#locations .shaded {
+  background-color: rgba(38, 84, 124, 0.7); }
+
+#locations .finder-wrapper {
+  background: url("/img/dogs-at-beach.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  #locations .finder-wrapper input {
+    margin-bottom: 10px; }
+  #locations .finder-wrapper .form-group {
+    margin-bottom: 0; }
+
+.finder-inner {
+  padding-top: 15px;
+  padding-bottom: 10px; }
+
+.finder h3 {
+  color: #FCFCFC;
+  margin-bottom: 15px;
+  font-weight: 300; }
+
+.finder label {
+  display: none; }
+
+.finder input {
+  padding-bottom: 5px; }
+
+.footer {
+  background-color: rgba(38, 84, 124, 0.7);
+  color: #FCFCFC; }
+  .footer .copyright {
+    padding-top: 1em; }

@@ -1,0 +1,157 @@
+
+
+// Variables
+$background-dark: #26547C;
+$background-med: rgba(38, 84, 124, .9);
+$background-light: rgba(38, 84, 124, .7);
+$highlight: #06D6A0;
+$highlight-dark: #06b083;
+$contrast-color: #FFD166;
+$overlay: rgba(255, 209, 102, .2);
+$background-color: #FCFCFC;
+$background-color-light: rgba(255, 255, 255, .5);
+
+// Height variables
+// $carousel-item-height: 300px;
+
+// Mixins
+// @mixin zero-margin($pad-up-dn, $pad-left-right) {
+// 	margin: 0px auto;
+// 	padding: $pad-up-dn $pad-left-right;
+// }
+
+// Styles
+
+// body{
+//     padding: 50px 0px 0px 0px;
+//     z-index: 0;
+// }
+
+// hide items
+.hide {
+    position: absolute !important;
+    top: -9999px !important;
+    left: -9999px !important;
+ }
+
+//Style buttons
+.btn-primary {
+    background-color: $highlight;
+    border: $highlight-dark;
+    color: $background-dark;
+}
+
+.btn-warning {
+    background-color: $contrast-color;
+    color: $background-dark;
+}
+
+// Navigation styles
+.navbar-dark {
+     background-color: $background-med;
+     .navbar-toggler {
+        color: $background-color;
+        border-color: transparent;
+     }
+}
+
+.navbar-brand {
+    span {
+        vertical-align: middle;
+        color: $contrast-color;
+        font-size: 1.5em;
+        line-height: 1;
+    }
+}
+
+.collapse.show {
+    border-top: 1px solid $background-color-light;
+}
+
+// General page styles
+.cover {
+    min-height: calc(100vh - 58px);
+}
+
+// .shaded {
+//     // -webkit-filter: blur(20px);
+//     // -moz-filter: blur(15px);
+//     // -o-filter: blur(15px);
+//     // -ms-filter: blur(15px);
+//     // filter: blur(15px);
+//     // background-color: $overlay;
+// }
+
+// Home page styles
+#home {
+    .cover {
+        background: url("/img/dogs-at-beach.jpg") no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    .cover,
+    .shaded {
+        min-height: calc(100vh - 58px);
+    }
+    .shaded {
+        background-color: $overlay;
+    }
+    .finder-wrapper {
+        padding-top: 50%;
+    }
+    .finder-inner {
+        background-color: $background-light;
+    }
+}
+
+// Style finder box
+
+#locations {
+    .shaded {
+        background-color: $background-light;
+    }
+    .finder-wrapper {
+        background: url("/img/dogs-at-beach.jpg") no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        // padding-top: 50%;
+        input {
+            margin-bottom: 10px;
+        }
+        .form-group {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.finder-inner {
+    // background-color: $background-light;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+.finder {
+    h3 {
+        color: $background-color;
+        margin-bottom: 15px;
+        font-weight: 300;
+    }
+    label {
+        display: none;
+    }
+    input {
+        padding-bottom: 5px;
+    }
+}
+
+.footer {
+    background-color: $background-light;
+    color: $background-color;
+    .copyright {
+        padding-top: 1em;
+    }
+}
