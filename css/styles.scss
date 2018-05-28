@@ -22,11 +22,6 @@ $background-color-light: rgba(255, 255, 255, .5);
 
 // Styles
 
-// body{
-//     padding: 50px 0px 0px 0px;
-//     z-index: 0;
-// }
-
 // hide items
 .hide {
     position: absolute !important;
@@ -87,19 +82,10 @@ $background-color-light: rgba(255, 255, 255, .5);
     min-height: calc(100vh - 58px);
 }
 
-// .shaded {
-//     // -webkit-filter: blur(20px);
-//     // -moz-filter: blur(15px);
-//     // -o-filter: blur(15px);
-//     // -ms-filter: blur(15px);
-//     // filter: blur(15px);
-//     // background-color: $overlay;
-// }
-
 // Home page styles
 #home {
     .cover {
-        background: url("/img/dogs-at-beach.jpg") no-repeat center center fixed;
+        background: url("../img/dogs-at-beach.jpg") no-repeat center center fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
