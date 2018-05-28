@@ -6,7 +6,17 @@
 .btn-primary {
   background-color: #06D6A0;
   border: #06b083;
-  color: #26547C; }
+  color: #26547C;
+  transition: background-color 0.5s cubic-bezier(0.075, 0.82, 0.165, 1); }
+  .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+    color: #26547C;
+    background-color: #06b083; }
+
+.btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active,
+.show > .btn-primary.dropdown-toggle {
+  color: #26547C;
+  background-color: #06b083; }
 
 .btn-warning {
   background-color: #FFD166;
@@ -45,7 +55,7 @@
   background-color: rgba(255, 209, 102, 0.2); }
 
 #home .finder-wrapper {
-  padding-top: 50%; }
+  min-height: calc(100vh - 58px); }
 
 #home .finder-inner {
   background-color: rgba(38, 84, 124, 0.7); }
